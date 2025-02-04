@@ -19,85 +19,80 @@ Implement the function `addItem` that takes two parameters: an array representin
 const shoppingList = [];
 const newItem = { name: 'Apples', quantity: 3, price: 1.50 };
 addItem(shoppingList, newItem);
+```
 
-Iteration #2: Remove an Item from the Shopping List
-Implement the function removeItem that takes the shopping list and the name of the item to remove. The function should find and remove the specified item from the list.
+### Iteration #2: Remove an Item from the Shopping List
+Implement the function `removeItem` that takes the shopping list and the name of the item to remove. The function should find and remove the specified item from the list.
 
-Example:
-
-javascript
-Copy
+**Example:**
+```javascript
 removeItem(shoppingList, 'Apples');
-Iteration #3: Calculate Total Cost
-Implement the function calculateTotalCost that takes the shopping list array and returns the total cost of all items. This should be calculated based on the quantity and price of each item.
+```
 
-Example:
+### Iteration #3: Calculate Total Cost
+Implement the function `calculateTotalCost` that takes the shopping list array and returns the total cost of all items. This should be calculated based on the quantity and price of each item.
 
-javascript
-Copy
+**Example:**
+```javascript
 const totalCost = calculateTotalCost(shoppingList); // Returns total cost
-Iteration #4: Find Item by Name
-Implement the function findItem that takes the shopping list and an item name. It should return the item object if it exists or null if it doesn’t.
+```
 
-Example:
+### Iteration #4: Find Item by Name
+Implement the function `findItem` that takes the shopping list and an item name. It should return the item object if it exists or `null` if it doesn’t.
 
-javascript
-Copy
+**Example:**
+```javascript
 const item = findItem(shoppingList, 'Apples');
 if (item) {
     console.log('Item found:', item);
 } else {
     console.log('Item not found.');
 }
-Iteration #5: List All Items
-Implement the function listItems that takes the shopping list and prints a summary of all items, including their name, quantity, and total price for that item (quantity * price).
+```
+### Iteration #5: List All Items
+Implement the function `listItems` that takes the shopping list and prints a summary of all items, including their name, quantity, and total price for that item (calculated as quantity * price).
 
-Example:
-
-javascript
-Copy
+**Example:**
+```javascript
 listItems(shoppingList); // Prints all items in the shopping list
-Bonus #1: Calculate Total Quantity
-Implement the function calculateTotalQuantity that takes the shopping list and returns the total quantity of all items being purchased.
+```
 
-Example:
+### Bonus #1: Calculate Total Quantity
+Implement the function `calculateTotalQuantity` that takes the shopping list and returns the total quantity of all items being purchased.
 
-javascript
-Copy
+**Example:**
+```javascript
 const totalQuantity = calculateTotalQuantity(shoppingList); // Returns total quantity
-Bonus #2: Unique Item Count
-Implement the function getUniqueItemCount that returns the count of unique items in the shopping list.
+```
 
-Example:
+### Bonus #2: Unique Item Count
+Implement the function `getUniqueItemCount` that returns the count of unique items in the shopping list.
 
-javascript
-Copy
+**Example:**
+```javascript
 const uniqueCount = getUniqueItemCount(shoppingList); // Returns number of unique items
-Bonus #3: Most Expensive Item
-Implement the function findMostExpensiveItem that scans through the shopping list and returns the item with the highest total price (calculated as quantity * price).
+```
 
-Example:
+### Bonus #3: Most Expensive Item
+Implement the function `findMostExpensiveItem` that scans through the shopping list and returns the item with the highest total price (calculated as quantity * price).
 
-javascript
-Copy
+**Example:**
+```javascript
 const expensiveItem = findMostExpensiveItem(shoppingList); // Returns the most expensive item
-Submission
-Upon completion, run the following commands in your terminal:
+```
 
-bash
-Copy
+## Submission
+Upon completion, run the following commands in your terminal:
+```bash
 git add .
 git commit -m "Completed Grocery Shopping Assistant Lab"
 git push origin master
+```
 Create a Pull Request so that your TAs can check your work.
 
-Instructions
+## Instructions
 Write your code in the src/grocery-shopping.js file, following the instructions provided for each iteration.
 Make sure to test your functions thoroughly, ensuring they work as expected.
-Conclusion
+
+## Conclusion
 This lab allows participants to engage in practical coding applications through a grocery shopping context. The structured iterations progress logically, enhancing learning as they implement functions that reflect real-world scenarios. Feel free to customize the iterations further to suit your audience or add additional complexity!
-
-text
-Copy
-
-This format gives each iteration a specific title with clear instructions and examples, making it easy for participants to follow along. You can use this directly as your README content. If you need any more modifications, just let me know!
